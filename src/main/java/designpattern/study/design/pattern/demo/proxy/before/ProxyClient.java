@@ -9,12 +9,6 @@ public class ProxyClient {
         this.timer = timer;
     }
 
-    public void run() {
-        service.makeEspresso();
-        service.makeAmericano();
-        service.makeLatte();
-    }
-
     public void makeEspresso() {
         timer.start();
         service.makeEspresso();
