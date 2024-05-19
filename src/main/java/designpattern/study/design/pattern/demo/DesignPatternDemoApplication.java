@@ -1,5 +1,6 @@
 package designpattern.study.design.pattern.demo;
 
+import designpattern.study.design.pattern.demo.flyweight.after.AfterFlyweightClient;
 import designpattern.study.design.pattern.demo.flyweight.before.BeforeFlyweightClient;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,12 +11,18 @@ public class DesignPatternDemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DesignPatternDemoApplication.class, args);
 
-		runFlyweight();
+//		runBeforeFlyweight();
+		runAfterFlyweight();
 	}
 
-	public static void runFlyweight() {
+	public static void runBeforeFlyweight() {
 		BeforeFlyweightClient beforeFlyweightClient = new BeforeFlyweightClient();
 		beforeFlyweightClient.run();
+	}
+
+	public static void runAfterFlyweight() {
+		AfterFlyweightClient afterFlyweightClient = new AfterFlyweightClient();
+		afterFlyweightClient.run();
 	}
 
 }
