@@ -3,7 +3,7 @@ package designpattern.study.design.pattern.demo.proxy.after;
 public class ProxyClient {
     ICoffeeMachineService service;
 
-    public ProxyClient(CoffeeMachineServiceProxy serviceProxy) {
+    public ProxyClient(ICoffeeMachineService serviceProxy) {
         service = serviceProxy;
     }
 
