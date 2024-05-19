@@ -1,4 +1,4 @@
-package designpattern.study.design.pattern.demo.proxy.after;
+package designpattern.study.design.pattern.demo.proxy.after.inheritance;
 
 public class CoffeeMachineTimer {
     public void start() {

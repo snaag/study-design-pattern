@@ -1,4 +1,4 @@
-package designpattern.study.design.pattern.demo.proxy.after;
+package designpattern.study.design.pattern.demo.proxy.after.inheritance;
 
 public class CoffeeMachineServiceProxy implements ICoffeeMachineService {
     private final CoffeeMachineTimer timer; // 의존성 주입
