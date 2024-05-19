@@ -1,22 +1,21 @@
 package designpattern.study.design.pattern.demo.flyweight.before;
 
-import designpattern.study.design.pattern.demo.flyweight.before.domain.Coordinate;
-import designpattern.study.design.pattern.demo.flyweight.before.domain.MassiveMesh;
-import designpattern.study.design.pattern.demo.flyweight.before.domain.MassiveSkill;
-import designpattern.study.design.pattern.demo.flyweight.before.domain.MassiveTexture;
+import designpattern.study.design.pattern.demo.flyweight.before.domain.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Mushroom {
     private final Coordinate coordinate;
+    private final Health health;
     private final MassiveMesh mesh;
     private final MassiveTexture texture;
     private final List<MassiveSkill> skills = new ArrayList<>();
 
 
-    public Mushroom(Coordinate coordinate, MassiveMesh mesh, MassiveTexture texture) {
+    public Mushroom(Coordinate coordinate, Health health, MassiveMesh mesh, MassiveTexture texture) {
         this.coordinate = coordinate;
+        this.health = health;
         this.mesh = mesh;
         this.texture = texture;
 
@@ -31,6 +30,7 @@ public class Mushroom {
 
     public int getSize() {
         return coordinate.getSize() +
+                health.getSize() +
                 mesh.getSize() +
                 texture.getSize() +
                 skills.stream().mapToInt(MassiveSkill::getSize).sum();
