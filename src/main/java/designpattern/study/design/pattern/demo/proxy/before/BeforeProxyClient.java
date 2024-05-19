@@ -1,8 +1,8 @@
 package designpattern.study.design.pattern.demo.proxy.before;
 
 public class BeforeProxyClient {
-    CoffeeMachineService service;
-    CoffeeMachineTimer timer;
+    private final CoffeeMachineService service;
+    private final CoffeeMachineTimer timer;
 
     public BeforeProxyClient(CoffeeMachineService service, CoffeeMachineTimer timer) {
         this.service = service;
