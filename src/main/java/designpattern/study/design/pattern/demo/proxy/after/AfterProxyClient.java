@@ -1,9 +1,9 @@
 package designpattern.study.design.pattern.demo.proxy.after;
 
-public class ProxyClient {
+public class AfterProxyClient {
     ICoffeeMachineService service;
 
-    public ProxyClient(ICoffeeMachineService serviceProxy) {
+    public AfterProxyClient(ICoffeeMachineService serviceProxy) {
         service = serviceProxy;
     }
 
