@@ -1,4 +1,4 @@
-package designpattern.study.design.pattern.demo.proxy.after.inheritance;
+package designpattern.study.design.pattern.demo.proxy.after.interfacee;
 
 public class CoffeeMachineService implements ICoffeeMachineService{
     public void makeEspresso() {
